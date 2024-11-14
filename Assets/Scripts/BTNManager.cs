@@ -23,7 +23,14 @@ public class BTNManager : MonoBehaviour
     //=========> Declaration <===========//
     public GameObject pauseCanvas;                              //Canvas We are showcasing when player presses pause.
 
-    /*-----------------------------------> No Start, Just Update <----------------------------*/
+    /*-----------------------------------> Start <----------------------------*/
+    /* Just to set the mouse visible and unlock from the centre point*/
+
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.None; // UNLock cursor
+        Cursor.visible = true; // Undo Hide cursor
+    }
 
     //=========> Update <===========//
     /*Step 1: Check if escape is pressed, if so, do Step 2
