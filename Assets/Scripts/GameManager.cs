@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
         if (CollectedCoin >= 2)                    // Check if CollectedCoin reaches 15.
         {
             // Step 4
-            SceneManager.LoadScene("You Won!");     // Load the "Won" scene.
+            SceneManager.LoadScene("Won");     // Load the "Won" scene.
         }
         /* You can add any other logic here, such as updating a UI display of collected coins. */
     }
